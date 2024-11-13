@@ -1,0 +1,12 @@
+<launch>
+   <node pkg="sicknav350" type="sicknav350_node" name="sicknav350" output="screen" >
+    <param name="publish_tf" value="false" />
+    <param name="publish_odom_" value="false" />
+    <param name="publish_scan" value="true" />
+    <param name="ipaddress" value="192.168.0.1" />
+    <param name="fixed_frame_id" value="map" />
+    <param name="laser_fram_id" value="laser" />
+    <param name="stop_angle" value="180" />
+    <param name="sick_motor_speed" value="8" />
+  </node>
+</launch>

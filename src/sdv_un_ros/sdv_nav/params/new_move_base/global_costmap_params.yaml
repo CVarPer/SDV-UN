@@ -1,0 +1,34 @@
+# global_costmap_params.yaml
+
+# The costmap_2d package provides a configurable structure that maintains
+# information about where the robot should navigate in the form of an occupancy
+# grid.
+# More info in http://wiki.ros.org/costmap_2d
+
+# This file contains parameters for global costmap
+
+global_costmap:
+  # Coordinate frame and tf parameters
+  global_frame: map
+  robot_base_frame: base_link
+  transform_tolerance: 0.5
+
+  # Rate parameters
+  update_frequency: 2.0
+  publish_frequency: 1.0
+
+  # Map management parameters
+  resolution: 0.03
+  width: 25.0
+  height: 25.0
+  origin_x: 0.0
+  origin_y: 0.0
+  rolling_window: false
+  cost_scaling_factor: 6.0
+  inflation_radius: 0.15
+
+  # Plugins
+  plugins:
+    - { name: static_layer, type: "costmap_2d::StaticLayer" }
+    - { name: obstacles_layer, type: "costmap_2d::ObstacleLayer" }
+    - { name: inflation_layer, type: "costmap_2d::InflationLayer" }

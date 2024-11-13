@@ -1,0 +1,29 @@
+EBandPlannerROS:
+
+  # TRAJECTORY CONTROL
+  differential_drive: true
+
+  # velocity limits
+  max_vel_lin: 0.5
+  #max_vel_th: 0.6
+  min_vel_lin: 0.1
+  #min_in_place_vel_th: 0.3
+
+  # goal tolerance
+  xy_goal_tolerance: 0.09
+  yaw_goal_tolerance: 0.2
+
+  # angular velocity PID
+  k_prop: 2.5
+
+
+  eband_min_relative_overlap: 0.45
+  eband_tiny_bubble_distance: 5.5
+  eband_tiny_bubble_expansion: 3.0
+  eband_internal_force_gain: 1.0
+  eband_external_force_gain: 2.0
+  num_iterations_eband_optimization: 3
+  eband_equilibrium_approx_max_recursion_depth: 4
+  eband_equilibrium_relative_overshoot: 0.75
+  eband_significant_force_lower_bound: 0.15
+  costmap_weight: 12.5

@@ -1,0 +1,8 @@
+prefix=/home/sdvun1/catkin_ws/devel
+
+Name: sicknav350
+Description: Description of sicknav350
+Version: 2.5.3
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: roscpp std_msgs sensor_msgs nav_msgs geometry_msgs sicktoolbox rosconsole diagnostic_updater tf message_runtime move_base_msgs actionlib

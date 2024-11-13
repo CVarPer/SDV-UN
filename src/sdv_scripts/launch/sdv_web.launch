@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- sdv_web.launch -->
+  <!-- This script runs SDVUN Stack Navigation, rosbridge and robot_pose_publisher -->
+  <!-- required to use SDV-UN-Web-App. -->
+
+  <!-- agv_nav: run Stack Navigation of SDVUN -->
+  <include file="$(find agv_nav)/launch/agv_nav.launch"/>
+
+  <!-- rosbridge: bridgsecket that allows comunication trough local network -->
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch"/>
+
+  <!-- robot_pose_publisher: publish pose. Used by map view -->
+  <node name="robot_pose" pkg="robot_pose_publisher" type="robot_pose_publisher"/>
+
+</launch>

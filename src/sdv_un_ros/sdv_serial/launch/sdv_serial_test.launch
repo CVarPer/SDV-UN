@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+
+<!-- SDV serial launch file -->
+
+<launch>
+
+    <node pkg="tf" type="static_transform_publisher" name="base_link_tf" args="0 0 0 0 0 0 /map /imu_frame 20" />
+    
+    #### SDV Serial communication
+    <node pkg="sdv_serial" type="sdv_serial_node" name="sdv_serial_node">
+        <remap from="imu" to="imu/data_raw" />
+        <remap from="mag" to="imu/mag" />
+    </node>
+
+    #### Complementary filter
+    <node pkg="imu_complementary_filter" type="complementary_filter_node" name="complementary_filter_node">
+        <param name="publish_debug_topics" value="true" />
+        <param name="do_bias_estimation" value="true" />
+        <param name="do_adaptive_gain" value="true" />
+        <param name="use_mag" value="true" />
+        <param name="gain_acc" value="0.45" />
+        <param name="gain_mag" value="0.025" />
+        <param name="bias_alpha" value="0.0" />
+    </node>
+
+
+</launch>

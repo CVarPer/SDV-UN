@@ -1,0 +1,21 @@
+# local_costmap_params.yaml
+
+# The costmap_2d package provides a configurable structure that maintains
+# information about where the robot should navigate in the form of an occupancy
+# grid.
+# More info in http://wiki.ros.org/costmap_2d
+
+# This file contains parameters for local costmap
+
+local_costmap:
+  global_frame: map
+  robot_base_frame: base_link
+  update_frequency: 5.0
+  publish_frequency: 2.0
+  rolling_window: true
+  width: 4.0
+  height: 4.0
+  resolution: 0.025
+  robot_radius: 0.544
+  cost_scaling_factor: 10.0
+  inflation_radius: 0.3

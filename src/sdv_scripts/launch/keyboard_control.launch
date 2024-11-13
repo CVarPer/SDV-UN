@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- keyboard_control.launch -->
+  <!-- This script runs necesary nodes to control SDVUN with the keyboard. -->
+
+  <!-- Arguments -->
+  <arg name="linear_scale" default="0.5" />
+  <arg name="angular_scale" default="1" />
+  <arg name="linear_accel" default="1" />
+  <arg name="angular_accel" default="2" />
+  <arg name="cmd_vel" default="mobile_base/commands/velocity" />
+  <arg name="namespace" default="" />
+
+  <!-- key_publisher: listen keys of keyboard and generates 'keys' messages -->
+  <node name="key_publisher" pkg="sdv_scripts" type="key_publisher.py" output="screen"/>
+
+  <!-- key_to_twist: listen to 'keys' messages and publish 'Twist' messages -->
+  <node name="key2twist" pkg="sdv_scripts" type="key2twist.py" output="screen"> 
+    <param name="linear_scale" value="$(arg linear_scale)"/>
+    <param name="angular_scale" value="$(arg angular_scale)"/>
+    <param name="linear_accel" value="$(arg linear_accel)"/>
+    <param name="angular_accel" value="$(arg angular_accel)"/>
+    <remap from="cmd_vel" to="/$(arg namespace)/$(arg cmd_vel)"/>
+  </node>
+
+</launch>

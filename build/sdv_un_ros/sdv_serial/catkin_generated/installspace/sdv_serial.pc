@@ -1,0 +1,8 @@
+prefix=/home/sdvun1/catkin_ws/install
+
+Name: sdv_serial
+Description: Description of sdv_serial
+Version: 0.1.0
+Cflags: -I${prefix}/include
+Libs: -L${prefix}/lib 
+Requires: std_msgs sensor_msgs message_runtime

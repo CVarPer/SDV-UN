@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- joy_control.launch -->
+  <!-- This script runs necesary nodes to control SDVUN with a joypad. -->
+
+  <!-- Arguments -->
+  <arg name="linear_scale" default="0.5" />
+  <arg name="angular_scale" default="1" />
+  <arg name="cmd_vel" default="mobile_base/commands/velocity" />
+  <arg name="namespace" default="" />
+
+  <!-- Joy Parameter -->
+  <param name="joy_node/dev" type="string" value="/dev/input/js0" />
+
+  <!-- joy_node -->
+  <node name="joy_node" pkg="joy" type="joy_node" output="screen"/>
+
+  <!-- key_to_twist: listen to 'keys' messages and publish 'Twist' messages -->
+  <node name="joy2twist" pkg="sdv_scripts" type="joy2twist.py" output="screen"> 
+    <param name="linear_scale" value="$(arg linear_scale)"/>
+    <param name="angular_scale" value="$(arg angular_scale)"/>
+    <remap from="cmd_vel" to="/$(arg namespace)/$(arg cmd_vel)"/>
+  </node>
+
+</launch>

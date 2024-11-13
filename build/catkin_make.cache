@@ -1,0 +1,2 @@
+robot_pose_publisher:sdv_scripts:sdv_un_ros/sdv_joystick:sdv_un_ros/sdv_nav:sdv_un_ros/sdv_process:sdv_un_ros/sdv_serial:sicknav350/sicknav350:sicknav350/sicktoolbox
+-DCATKIN_DEVEL_PREFIX=/home/sdvun1/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/sdvun1/catkin_ws/install -G Unix Makefiles

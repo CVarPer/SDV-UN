@@ -1,0 +1,18 @@
+# global_planner_params.yaml
+
+# This package provides an implementation of a fast, interpolated global planner
+# for navigation. This class adheres to the nav_core::BaseGlobalPlanner 
+# interface specified in the nav_core package.
+
+# More info in http://wiki.ros.org/global_planner
+
+GlobalPlanner:
+  old_navfn_behavior: false
+  use_quadratic: true
+  use_dijkstra: true
+  use_grid_path: false
+  allow_unknown: true
+  default_tolerance: 0.0
+  lethal_cost: 253
+  neutral_cost: 66
+  publish_potential: true

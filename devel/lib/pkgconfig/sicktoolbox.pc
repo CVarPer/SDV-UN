@@ -1,0 +1,8 @@
+prefix=/home/sdvun1/catkin_ws/devel
+
+Name: sicktoolbox
+Description: Description of sicktoolbox
+Version: 1.0.103
+Cflags: -I/home/sdvun1/catkin_ws/src/sicknav350/sicktoolbox/include
+Libs: -L${prefix}/lib -lSickLD -lSickLMS1xx -lSickLMS2xx -lSickNAV350
+Requires: 

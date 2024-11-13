@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!-- Arguments -->
+    <arg name="firebase" default="true" />
+    <arg name="localization" default="hector" />
+
+    <!-- ROS Params-->
+    <rosparam command="load" file="$(find sdv_nav)/sdv_params.yaml" />
+
+    <!-- Firebase Initializer -->
+    <node name="firebase_initializer" pkg="sdv_process" type="firebase_initializer.py" output="screen" />
+
+    <!-- ROS Coms -->
+    <group if="$(arg firebase)">
+        <node name="ros_coms" pkg="sdv_process" type="firebase_coms_launcher.sh" />
+    </group>
+
+    <!-- SDV Navigation Stack -->
+    <include file="$(find sdv_nav)/launch/sdv_nav.launch">
+        <arg name="localization" value="$(arg localization)" />
+    </include> />
+
+</launch>

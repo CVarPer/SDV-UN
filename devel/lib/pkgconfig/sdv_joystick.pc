@@ -1,0 +1,8 @@
+prefix=/home/sdvun1/catkin_ws/devel
+
+Name: sdv_joystick
+Description: Description of sdv_joystick
+Version: 0.1.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: geometry_msgs sensor_msgs std_msgs

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- udp_serial_test.launch -->
+  <!-- This launch file runs serial_agv_node and udp2twist just for test SDV -->
+  <!-- motors over wifi network. -->
+
+  <node pkg="tf" type="static_transform_publisher" name="base_link_tf" args="0 0 0 0 0 0 /map /imu_frame 20" />
+
+  <!-- Serial communication SDV -->
+
+  <node pkg="serial_agv" type="serial_agv_node" name="serial_agv_node">
+    <remap from="imu" to="imu/data_raw" />
+    <remap from="mag" to="imu/mag" />
+  </node>
+
+  <!-- Complementary filter -->
+
+  <node pkg="imu_complementary_filter" type="complementary_filter_node" name="complementary_filter_node">
+    <param name="publish_debug_topics" value="true" />
+    <param name="do_bias_estimation" value="true" />
+    <param name="do_adaptive_gain" value="true" />
+    <param name="use_mag" value="true" />
+    <param name="gain_acc" value="0.45" />
+    <param name="gain_mag" value="0.025" />
+    <param name="bias_alpha" value="0.0" />
+  </node>
+
+  <!-- UDP socket -->
+  <include file="$(find sdv_scripts)/launch/udp_control.launch" />
+
+</launch>

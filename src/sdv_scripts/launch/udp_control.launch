@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+
+  <!-- Arguments -->
+  <arg name="linear_scale" default="0.5" />
+  <arg name="angular_scale" default="0.5" />
+  <arg name="cmd_vel" default="mobile_base/commands/velocity" />
+  <arg name="namespace" default="" />
+  
+  <!-- UDP socket -->
+  <node pkg="sdv_scripts" name="udp2twist" type="udp2twist.py" output="screen">
+    <param name="linear_scale" value="$(arg linear_scale)"/>
+    <param name="angular_scale" value="$(arg angular_scale)"/>
+    <remap from="cmd_vel" to="/$(arg namespace)/$(arg cmd_vel)"/>
+  </node>
+
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/sdvun1/catkin_ws/install
+
+Name: sdv_scripts
+Description: Description of sdv_scripts
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

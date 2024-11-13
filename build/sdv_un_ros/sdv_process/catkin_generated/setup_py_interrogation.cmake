@@ -1,0 +1,7 @@
+set(sdv_process_SETUP_PY_SETUP_MODULE "distutils.core")
+set(sdv_process_SETUP_PY_VERSION "0.0.0")
+set(sdv_process_SETUP_PY_SCRIPTS "")
+set(sdv_process_SETUP_PY_PACKAGES "sdv_process")
+set(sdv_process_SETUP_PY_PACKAGE_DIRS "src/sdv_process")
+set(sdv_process_SETUP_PY_MODULES "")
+set(sdv_process_SETUP_PY_MODULE_DIRS "")

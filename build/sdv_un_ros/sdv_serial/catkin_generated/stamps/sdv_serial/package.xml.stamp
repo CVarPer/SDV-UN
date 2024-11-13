@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package>
+  <name>sdv_serial</name>
+  <version>0.1.0</version>
+  <description>Serial communication between tiva_c and PC</description>
+
+  <author email="jfpinedap@unal.edu.com">Juan Francisco Pineda</author>
+  <author email="jhangaritamo@unal.edu.com">Jhonyfer Angarita Moreno</author>
+  <maintainer email="jhangaritamo@unal.edu.com">Jhonyfer Angarita Moreno</maintainer>
+
+  <license>BSD</license>
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>roscpp</build_depend>
+  <build_depend>rosbag</build_depend>
+  <build_depend>serial</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>message_generation</build_depend>
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>rosbag</run_depend>
+  <run_depend>serial</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>sensor_msgs</run_depend>
+  <run_depend>message_runtime</run_depend>
+
+</package>
