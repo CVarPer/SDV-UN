@@ -67,14 +67,14 @@ set(sicktoolbox_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(sicktoolbox_SOURCE_PREFIX /home/sdvun1/catkin_ws/src/sicknav350/sicktoolbox)
-  set(sicktoolbox_DEVEL_PREFIX /home/sdvun1/catkin_ws/devel)
+  set(sicktoolbox_SOURCE_PREFIX /home/christian/catkin_ws/src/sicknav350/sicktoolbox)
+  set(sicktoolbox_DEVEL_PREFIX /home/christian/catkin_ws/devel)
   set(sicktoolbox_INSTALL_PREFIX "")
   set(sicktoolbox_PREFIX ${sicktoolbox_DEVEL_PREFIX})
 else()
   set(sicktoolbox_SOURCE_PREFIX "")
   set(sicktoolbox_DEVEL_PREFIX "")
-  set(sicktoolbox_INSTALL_PREFIX /home/sdvun1/catkin_ws/install)
+  set(sicktoolbox_INSTALL_PREFIX /home/christian/catkin_ws/install)
   set(sicktoolbox_PREFIX ${sicktoolbox_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(sicktoolbox_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/sdvun1/catkin_ws/src/sicknav350/sicktoolbox/include " STREQUAL " ")
+if(NOT "/home/christian/catkin_ws/src/sicknav350/sicktoolbox/include " STREQUAL " ")
   set(sicktoolbox_INCLUDE_DIRS "")
-  set(_include_dirs "/home/sdvun1/catkin_ws/src/sicknav350/sicktoolbox/include")
+  set(_include_dirs "/home/christian/catkin_ws/src/sicknav350/sicktoolbox/include")
   if(NOT "https://github.com/ros-drivers/sicktoolbox/issues " STREQUAL " ")
     set(_report "Check the issue tracker 'https://github.com/ros-drivers/sicktoolbox/issues' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://sicktoolbox.sourceforge.net/ " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/sdvun1/catkin_ws/src/sicknav350/sicktoolbox/include " STREQUAL " "
         message(FATAL_ERROR "Project 'sicktoolbox' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'sicktoolbox' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/sdvun1/catkin_ws/src/sicknav350/sicktoolbox/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'sicktoolbox' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/christian/catkin_ws/src/sicknav350/sicktoolbox/${idir}'.  ${_report}")
     endif()
     _list_append_unique(sicktoolbox_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/sdvun1/catkin_ws/devel/lib;/home/sdvun1/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/christian/catkin_ws/devel/lib;/home/christian/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

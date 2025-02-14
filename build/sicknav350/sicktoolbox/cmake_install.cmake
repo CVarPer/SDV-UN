@@ -1,8 +1,8 @@
-# Install script for directory: /home/sdvun1/catkin_ws/src/sicknav350/sicktoolbox
+# Install script for directory: /home/christian/catkin_ws/src/sicknav350/sicktoolbox
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/sdvun1/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/christian/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/sdvun1/catkin_ws/build/sicknav350/sicktoolbox/catkin_generated/installspace/sicktoolbox.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/christian/catkin_ws/build/sicknav350/sicktoolbox/catkin_generated/installspace/sicktoolbox.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sicktoolbox/cmake" TYPE FILE FILES
-    "/home/sdvun1/catkin_ws/build/sicknav350/sicktoolbox/catkin_generated/installspace/sicktoolboxConfig.cmake"
-    "/home/sdvun1/catkin_ws/build/sicknav350/sicktoolbox/catkin_generated/installspace/sicktoolboxConfig-version.cmake"
+    "/home/christian/catkin_ws/build/sicknav350/sicktoolbox/catkin_generated/installspace/sicktoolboxConfig.cmake"
+    "/home/christian/catkin_ws/build/sicknav350/sicktoolbox/catkin_generated/installspace/sicktoolboxConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sicktoolbox" TYPE FILE FILES "/home/sdvun1/catkin_ws/src/sicknav350/sicktoolbox/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sicktoolbox" TYPE FILE FILES "/home/christian/catkin_ws/src/sicknav350/sicktoolbox/package.xml")
 endif()
 

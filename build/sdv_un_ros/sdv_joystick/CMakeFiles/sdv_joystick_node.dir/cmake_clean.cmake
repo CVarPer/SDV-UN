@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sdv_joystick_node.dir/src/sdv_joystick_node.cpp.o"
-  "/home/sdvun1/catkin_ws/devel/lib/sdv_joystick/sdv_joystick_node.pdb"
-  "/home/sdvun1/catkin_ws/devel/lib/sdv_joystick/sdv_joystick_node"
+  "/home/christian/catkin_ws/devel/lib/sdv_joystick/sdv_joystick_node.pdb"
+  "/home/christian/catkin_ws/devel/lib/sdv_joystick/sdv_joystick_node"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/LDConfigLib.dir/c++/examples/ld/ld_config/src/ConfigFile.cpp.o"
-  "/home/sdvun1/catkin_ws/devel/lib/libLDConfigLib.pdb"
-  "/home/sdvun1/catkin_ws/devel/lib/libLDConfigLib.so"
+  "/home/christian/catkin_ws/devel/lib/libLDConfigLib.pdb"
+  "/home/christian/catkin_ws/devel/lib/libLDConfigLib.so"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,0 +1,8 @@
+prefix=/home/christian/catkin_ws/devel
+
+Name: sdvun_process
+Description: Description of sdvun_process
+Version: 0.1.0
+Cflags: -I/home/christian/catkin_ws/devel/include
+Libs: -L${prefix}/lib 
+Requires: rospy message_runtime

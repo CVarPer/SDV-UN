@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include".split(';') if "${prefix}/i
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lSickLD;-lSickLMS1xx;-lSickLMS2xx;-lSickNAV350".split(';') if "-lSickLD;-lSickLMS1xx;-lSickLMS2xx;-lSickNAV350" != "" else []
 PROJECT_NAME = "sicktoolbox"
-PROJECT_SPACE_DIR = "/home/sdvun1/catkin_ws/install"
+PROJECT_SPACE_DIR = "/home/christian/catkin_ws/install"
 PROJECT_VERSION = "1.0.103"

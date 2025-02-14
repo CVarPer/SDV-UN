@@ -67,14 +67,14 @@ set(sdv_process_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(sdv_process_SOURCE_PREFIX /home/sdvun1/catkin_ws/src/sdv_un_ros/sdv_process)
-  set(sdv_process_DEVEL_PREFIX /home/sdvun1/catkin_ws/devel)
+  set(sdv_process_SOURCE_PREFIX /home/christian/catkin_ws/src/sdv_un_ros/sdv_process)
+  set(sdv_process_DEVEL_PREFIX /home/christian/catkin_ws/devel)
   set(sdv_process_INSTALL_PREFIX "")
   set(sdv_process_PREFIX ${sdv_process_DEVEL_PREFIX})
 else()
   set(sdv_process_SOURCE_PREFIX "")
   set(sdv_process_DEVEL_PREFIX "")
-  set(sdv_process_INSTALL_PREFIX /home/sdvun1/catkin_ws/install)
+  set(sdv_process_INSTALL_PREFIX /home/christian/catkin_ws/install)
   set(sdv_process_PREFIX ${sdv_process_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/sdvun1/catkin_ws/install/lib;/home/sdvun1/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/christian/catkin_ws/install/lib;/home/christian/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

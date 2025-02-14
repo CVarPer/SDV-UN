@@ -1,2 +1,2 @@
-robot_pose_publisher:sdv_scripts:sdv_un_ros/sdv_joystick:sdv_un_ros/sdv_nav:sdv_un_ros/sdv_process:sdv_un_ros/sdv_serial:sicknav350/sicknav350:sicknav350/sicktoolbox
--DCATKIN_DEVEL_PREFIX=/home/sdvun1/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/sdvun1/catkin_ws/install -G Unix Makefiles
+robot_pose_publisher:sdv_scripts:sdv_un_ros/sdv_joystick:sdv_un_ros/sdv_nav:sdv_un_ros/sdv_process:sdv_un_ros/sdv_serial:sdvun_sim/labfabex_gazebo:sdvun_sim/sdvun_description:sdvun_sim/sdvun_gazebo:sdvun_sim/sdvun_navigation:sdvun_sim/sdvun_process:sdvun_sim/sdvun_rviz:sdvun_sim/sdvun_sim:sdvun_sim/submodules/realsense_gazebo_plugin:sicknav350/sicknav350:sicknav350/sicktoolbox
+-DCATKIN_DEVEL_PREFIX=/home/christian/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/christian/catkin_ws/install -G Unix Makefiles

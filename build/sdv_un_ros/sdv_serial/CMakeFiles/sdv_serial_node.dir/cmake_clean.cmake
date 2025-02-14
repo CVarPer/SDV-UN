@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sdv_serial_node.dir/src/sdv_serial_node.cpp.o"
   "CMakeFiles/sdv_serial_node.dir/src/motor.cpp.o"
-  "/home/sdvun1/catkin_ws/devel/lib/sdv_serial/sdv_serial_node.pdb"
-  "/home/sdvun1/catkin_ws/devel/lib/sdv_serial/sdv_serial_node"
+  "/home/christian/catkin_ws/devel/lib/sdv_serial/sdv_serial_node.pdb"
+  "/home/christian/catkin_ws/devel/lib/sdv_serial/sdv_serial_node"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -1,8 +1,8 @@
-# Install script for directory: /home/sdvun1/catkin_ws/src/sdv_un_ros/sdv_joystick
+# Install script for directory: /home/christian/catkin_ws/src/sdv_un_ros/sdv_joystick
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/sdvun1/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/christian/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/sdvun1/catkin_ws/build/sdv_un_ros/sdv_joystick/catkin_generated/installspace/sdv_joystick.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/christian/catkin_ws/build/sdv_un_ros/sdv_joystick/catkin_generated/installspace/sdv_joystick.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sdv_joystick/cmake" TYPE FILE FILES
-    "/home/sdvun1/catkin_ws/build/sdv_un_ros/sdv_joystick/catkin_generated/installspace/sdv_joystickConfig.cmake"
-    "/home/sdvun1/catkin_ws/build/sdv_un_ros/sdv_joystick/catkin_generated/installspace/sdv_joystickConfig-version.cmake"
+    "/home/christian/catkin_ws/build/sdv_un_ros/sdv_joystick/catkin_generated/installspace/sdv_joystickConfig.cmake"
+    "/home/christian/catkin_ws/build/sdv_un_ros/sdv_joystick/catkin_generated/installspace/sdv_joystickConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sdv_joystick" TYPE FILE FILES "/home/sdvun1/catkin_ws/src/sdv_un_ros/sdv_joystick/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sdv_joystick" TYPE FILE FILES "/home/christian/catkin_ws/src/sdv_un_ros/sdv_joystick/package.xml")
 endif()
 

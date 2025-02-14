@@ -1,8 +1,8 @@
-# Install script for directory: /home/sdvun1/catkin_ws/src/sdv_un_ros/sdv_nav
+# Install script for directory: /home/christian/catkin_ws/src/sdv_un_ros/sdv_nav
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/sdvun1/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/christian/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 

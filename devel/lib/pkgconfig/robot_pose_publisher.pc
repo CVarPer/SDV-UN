@@ -1,4 +1,4 @@
-prefix=/home/sdvun1/catkin_ws/devel
+prefix=/home/christian/catkin_ws/devel
 
 Name: robot_pose_publisher
 Description: Description of robot_pose_publisher

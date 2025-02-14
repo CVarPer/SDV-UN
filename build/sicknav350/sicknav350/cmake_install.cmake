@@ -1,8 +1,8 @@
-# Install script for directory: /home/sdvun1/catkin_ws/src/sicknav350/sicknav350
+# Install script for directory: /home/christian/catkin_ws/src/sicknav350/sicknav350
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/sdvun1/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/christian/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,38 +38,38 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sicknav350/cmake" TYPE FILE FILES "/home/sdvun1/catkin_ws/build/sicknav350/sicknav350/catkin_generated/installspace/sicknav350-msg-paths.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sicknav350/cmake" TYPE FILE FILES "/home/christian/catkin_ws/build/sicknav350/sicknav350/catkin_generated/installspace/sicknav350-msg-paths.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/sdvun1/catkin_ws/devel/share/roseus/ros/sicknav350")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/roseus/ros" TYPE DIRECTORY FILES "/home/christian/catkin_ws/devel/share/roseus/ros/sicknav350")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/sdvun1/catkin_ws/devel/lib/python2.7/dist-packages/sicknav350")
+  execute_process(COMMAND "/usr/bin/python2" -m compileall "/home/christian/catkin_ws/devel/lib/python2.7/dist-packages/sicknav350")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/sdvun1/catkin_ws/devel/lib/python2.7/dist-packages/sicknav350")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/python2.7/dist-packages" TYPE DIRECTORY FILES "/home/christian/catkin_ws/devel/lib/python2.7/dist-packages/sicknav350")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/sdvun1/catkin_ws/build/sicknav350/sicknav350/catkin_generated/installspace/sicknav350.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/christian/catkin_ws/build/sicknav350/sicknav350/catkin_generated/installspace/sicknav350.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sicknav350/cmake" TYPE FILE FILES "/home/sdvun1/catkin_ws/build/sicknav350/sicknav350/catkin_generated/installspace/sicknav350-msg-extras.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sicknav350/cmake" TYPE FILE FILES "/home/christian/catkin_ws/build/sicknav350/sicknav350/catkin_generated/installspace/sicknav350-msg-extras.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sicknav350/cmake" TYPE FILE FILES
-    "/home/sdvun1/catkin_ws/build/sicknav350/sicknav350/catkin_generated/installspace/sicknav350Config.cmake"
-    "/home/sdvun1/catkin_ws/build/sicknav350/sicknav350/catkin_generated/installspace/sicknav350Config-version.cmake"
+    "/home/christian/catkin_ws/build/sicknav350/sicknav350/catkin_generated/installspace/sicknav350Config.cmake"
+    "/home/christian/catkin_ws/build/sicknav350/sicknav350/catkin_generated/installspace/sicknav350Config-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sicknav350" TYPE FILE FILES "/home/sdvun1/catkin_ws/src/sicknav350/sicknav350/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sicknav350" TYPE FILE FILES "/home/christian/catkin_ws/src/sicknav350/sicknav350/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -79,12 +79,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/sicknav350/sicknav350_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/sicknav350" TYPE EXECUTABLE FILES "/home/sdvun1/catkin_ws/devel/lib/sicknav350/sicknav350_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/sicknav350" TYPE EXECUTABLE FILES "/home/christian/catkin_ws/devel/lib/sicknav350/sicknav350_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/sicknav350/sicknav350_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/sicknav350/sicknav350_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/sicknav350/sicknav350_node"
-         OLD_RPATH "/home/sdvun1/catkin_ws/devel/lib:/opt/ros/melodic/lib:"
+         OLD_RPATH "/home/christian/catkin_ws/devel/lib:/opt/ros/melodic/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/sicknav350/sicknav350_node")
@@ -93,6 +93,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sicknav350" TYPE DIRECTORY FILES "/home/sdvun1/catkin_ws/src/sicknav350/sicknav350/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sicknav350" TYPE DIRECTORY FILES "/home/christian/catkin_ws/src/sicknav350/sicknav350/launch")
 endif()
 

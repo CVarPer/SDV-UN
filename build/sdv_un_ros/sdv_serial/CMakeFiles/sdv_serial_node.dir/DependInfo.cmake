@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/sdvun1/catkin_ws/src/sdv_un_ros/sdv_serial/src/motor.cpp" "/home/sdvun1/catkin_ws/build/sdv_un_ros/sdv_serial/CMakeFiles/sdv_serial_node.dir/src/motor.cpp.o"
-  "/home/sdvun1/catkin_ws/src/sdv_un_ros/sdv_serial/src/sdv_serial_node.cpp" "/home/sdvun1/catkin_ws/build/sdv_un_ros/sdv_serial/CMakeFiles/sdv_serial_node.dir/src/sdv_serial_node.cpp.o"
+  "/home/christian/catkin_ws/src/sdv_un_ros/sdv_serial/src/motor.cpp" "/home/christian/catkin_ws/build/sdv_un_ros/sdv_serial/CMakeFiles/sdv_serial_node.dir/src/motor.cpp.o"
+  "/home/christian/catkin_ws/src/sdv_un_ros/sdv_serial/src/sdv_serial_node.cpp" "/home/christian/catkin_ws/build/sdv_un_ros/sdv_serial/CMakeFiles/sdv_serial_node.dir/src/sdv_serial_node.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -18,8 +18,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/sdvun1/catkin_ws/devel/include"
-  "/home/sdvun1/catkin_ws/src/sdv_un_ros/sdv_serial/include"
+  "/home/christian/catkin_ws/devel/include"
+  "/home/christian/catkin_ws/src/sdv_un_ros/sdv_serial/include"
   "/opt/ros/melodic/include"
   "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )

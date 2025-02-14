@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -DLDConfigLib_EXPORTS -DROS_BUILD_SHARED_LIBS=1
 
-CXX_INCLUDES = -I/home/sdvun1/catkin_ws/src/sicknav350/sicktoolbox/include 
+CXX_INCLUDES = -I/home/christian/catkin_ws/src/sicknav350/sicktoolbox/include 
 

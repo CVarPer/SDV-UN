@@ -67,14 +67,14 @@ set(sicktoolbox_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(sicktoolbox_SOURCE_PREFIX /home/sdvun1/catkin_ws/src/sicknav350/sicktoolbox)
-  set(sicktoolbox_DEVEL_PREFIX /home/sdvun1/catkin_ws/devel)
+  set(sicktoolbox_SOURCE_PREFIX /home/christian/catkin_ws/src/sicknav350/sicktoolbox)
+  set(sicktoolbox_DEVEL_PREFIX /home/christian/catkin_ws/devel)
   set(sicktoolbox_INSTALL_PREFIX "")
   set(sicktoolbox_PREFIX ${sicktoolbox_DEVEL_PREFIX})
 else()
   set(sicktoolbox_SOURCE_PREFIX "")
   set(sicktoolbox_DEVEL_PREFIX "")
-  set(sicktoolbox_INSTALL_PREFIX /home/sdvun1/catkin_ws/install)
+  set(sicktoolbox_INSTALL_PREFIX /home/christian/catkin_ws/install)
   set(sicktoolbox_PREFIX ${sicktoolbox_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/sdvun1/catkin_ws/install/lib;/home/sdvun1/catkin_ws/devel/lib;/opt/ros/melodic/lib)
+    foreach(path /home/christian/catkin_ws/install/lib;/home/christian/catkin_ws/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

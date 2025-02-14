@@ -1,0 +1,19 @@
+<package>
+  <name>sdvun_sim</name>
+  <version>0.1.0</version>
+  <author>Jhonyfer Angarita Moreno</author>
+  <description>
+    The sdvun_sim meta package contains multiple packages to simulate SDVUN mobioe robots in LabFabEX.
+  </description>
+  <license>BSD</license>
+  <maintainer email="jhangaritamo@unal.edu.co">Jhonyfer Angarita Moreno</maintainer>
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <run_depend>sdvun_description</run_depend>
+  <run_depend>sdvun_gazebo</run_depend>
+  <run_depend>labfabex_gazebo</run_depend>
+
+  <export>
+    <metapackage/>
+  </export>
+</package>

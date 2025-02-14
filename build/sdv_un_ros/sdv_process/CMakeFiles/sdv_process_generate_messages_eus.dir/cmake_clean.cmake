@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/sdv_process_generate_messages_eus"
-  "/home/sdvun1/catkin_ws/devel/share/roseus/ros/sdv_process/msg/FirebaseProcess.l"
-  "/home/sdvun1/catkin_ws/devel/share/roseus/ros/sdv_process/manifest.l"
+  "/home/christian/catkin_ws/devel/share/roseus/ros/sdv_process/msg/FirebaseProcess.l"
+  "/home/christian/catkin_ws/devel/share/roseus/ros/sdv_process/manifest.l"
 )
 
 # Per-language clean rules from dependency scanning.

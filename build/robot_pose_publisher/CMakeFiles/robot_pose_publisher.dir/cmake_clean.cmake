@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/robot_pose_publisher.dir/src/robot_pose_publisher.cpp.o"
-  "/home/sdvun1/catkin_ws/devel/lib/robot_pose_publisher/robot_pose_publisher.pdb"
-  "/home/sdvun1/catkin_ws/devel/lib/robot_pose_publisher/robot_pose_publisher"
+  "/home/christian/catkin_ws/devel/lib/robot_pose_publisher/robot_pose_publisher.pdb"
+  "/home/christian/catkin_ws/devel/lib/robot_pose_publisher/robot_pose_publisher"
 )
 
 # Per-language clean rules from dependency scanning.

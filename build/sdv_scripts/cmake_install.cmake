@@ -1,8 +1,8 @@
-# Install script for directory: /home/sdvun1/catkin_ws/src/sdv_scripts
+# Install script for directory: /home/christian/catkin_ws/src/sdv_scripts
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/sdvun1/catkin_ws/install")
+  set(CMAKE_INSTALL_PREFIX "/home/christian/catkin_ws/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/sdvun1/catkin_ws/build/sdv_scripts/catkin_generated/installspace/sdv_scripts.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/christian/catkin_ws/build/sdv_scripts/catkin_generated/installspace/sdv_scripts.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sdv_scripts/cmake" TYPE FILE FILES
-    "/home/sdvun1/catkin_ws/build/sdv_scripts/catkin_generated/installspace/sdv_scriptsConfig.cmake"
-    "/home/sdvun1/catkin_ws/build/sdv_scripts/catkin_generated/installspace/sdv_scriptsConfig-version.cmake"
+    "/home/christian/catkin_ws/build/sdv_scripts/catkin_generated/installspace/sdv_scriptsConfig.cmake"
+    "/home/christian/catkin_ws/build/sdv_scripts/catkin_generated/installspace/sdv_scriptsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sdv_scripts" TYPE FILE FILES "/home/sdvun1/catkin_ws/src/sdv_scripts/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/sdv_scripts" TYPE FILE FILES "/home/christian/catkin_ws/src/sdv_scripts/package.xml")
 endif()
 

@@ -30,14 +30,14 @@ catkin_package(
 include_directories(include ${catkin_INCLUDE_DIRS})
 
 # Driver libraries
-#add_library(SickLD c++/drivers/ld/sickld/SickLD.cc c++/drivers/ld/sickld/SickLDBufferMonitor.cc c++/drivers/ld/sickld/SickLDMessage.cc)
-#target_link_libraries(SickLD ${catkin_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
+add_library(SickLD c++/drivers/ld/sickld/SickLD.cc c++/drivers/ld/sickld/SickLDBufferMonitor.cc c++/drivers/ld/sickld/SickLDMessage.cc)
+target_link_libraries(SickLD ${catkin_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
 
-#add_library(SickLMS1xx c++/drivers/lms1xx/sicklms1xx/SickLMS1xx.cc c++/drivers/lms1xx/sicklms1xx/SickLMS1xxBufferMonitor.cc c++/drivers/lms1xx/sicklms1xx/SickLMS1xxMessage.cc)
-#target_link_libraries(SickLMS1xx ${catkin_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
+add_library(SickLMS1xx c++/drivers/lms1xx/sicklms1xx/SickLMS1xx.cc c++/drivers/lms1xx/sicklms1xx/SickLMS1xxBufferMonitor.cc c++/drivers/lms1xx/sicklms1xx/SickLMS1xxMessage.cc)
+target_link_libraries(SickLMS1xx ${catkin_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
 
-#add_library(SickLMS2xx c++/drivers/lms2xx/sicklms2xx/SickLMS2xx.cc c++/drivers/lms2xx/sicklms2xx/SickLMS2xxBufferMonitor.cc c++/drivers/lms2xx/sicklms2xx/SickLMS2xxMessage.cc)
-#target_link_libraries(SickLMS2xx ${catkin_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
+add_library(SickLMS2xx c++/drivers/lms2xx/sicklms2xx/SickLMS2xx.cc c++/drivers/lms2xx/sicklms2xx/SickLMS2xxBufferMonitor.cc c++/drivers/lms2xx/sicklms2xx/SickLMS2xxMessage.cc)
+target_link_libraries(SickLMS2xx ${catkin_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
 
 add_library(SickNAV350 c++/drivers/nav350/sicknav350/SickNAV350.cc c++/drivers/nav350/sicknav350/SickNAV350BufferMonitor.cc c++/drivers/nav350/sicknav350/SickNAV350Message.cc)
 target_link_libraries(SickNAV350 ${catkin_LIBRARIES} ${CMAKE_THREAD_LIBS_INIT})
@@ -56,11 +56,11 @@ add_library(LDConfigLib c++/examples/ld/ld_config/src/ConfigFile.cpp)
 #add_executable(ld_single_sector c++/examples/ld/ld_single_sector/src/main.cc)
 #target_link_libraries(ld_single_sector SickLD ${catkin_LIBRARIES})
 
-#add_executable(lms1xx_simple_app c++/examples/lms1xx/lms1xx_simple_app/src/main.cc)
-#target_link_libraries(lms1xx_simple_app SickLMS1xx ${catkin_LIBRARIES})
+add_executable(lms1xx_simple_app c++/examples/lms1xx/lms1xx_simple_app/src/main.cc)
+target_link_libraries(lms1xx_simple_app SickLMS1xx ${catkin_LIBRARIES})
 
-#add_executable(lms2xx_config c++/examples/lms2xx/lms2xx_config/src/main.cc)
-#target_link_libraries(lms2xx_config SickLMS2xx ${catkin_LIBRARIES})
+add_executable(lms2xx_config c++/examples/lms2xx/lms2xx_config/src/main.cc)
+target_link_libraries(lms2xx_config SickLMS2xx ${catkin_LIBRARIES})
 
 #add_executable(lms2xx_mean_values c++/examples/lms2xx/lms2xx_mean_values/src/main.cc)
 #target_link_libraries(lms2xx_mean_values SickLMS2xx ${catkin_LIBRARIES})
@@ -83,11 +83,11 @@ add_library(LDConfigLib c++/examples/ld/ld_config/src/ConfigFile.cpp)
 #add_executable(lms2xx_subrange c++/examples/lms2xx/lms2xx_subrange/src/main.cc)
 #target_link_libraries(lms2xx_subrange SickLMS2xx ${catkin_LIBRARIES})
 
-#add_executable(nav350_server c++/examples/nav350/nav350_server/src/main.cc c++/examples/nav350/nav350_server/src/server.cc)
-#target_link_libraries(nav350_server SickNAV350 ${catkin_LIBRARIES})
+add_executable(nav350_server c++/examples/nav350/nav350_server/src/main.cc c++/examples/nav350/nav350_server/src/server.cc)
+target_link_libraries(nav350_server SickNAV350 ${catkin_LIBRARIES})
 
-#add_executable(NAV350_single_sector c++/examples/nav350/nav350_single_sector/src/main.cc)
-#target_link_libraries(NAV350_single_sector SickNAV350 ${catkin_LIBRARIES})
+add_executable(NAV350_single_sector c++/examples/nav350/nav350_single_sector/src/main.cc)
+target_link_libraries(NAV350_single_sector SickNAV350 ${catkin_LIBRARIES})
 
 #############
 ## Install ##

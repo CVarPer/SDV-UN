@@ -1,4 +1,4 @@
-prefix=/home/sdvun1/catkin_ws/devel
+prefix=/home/christian/catkin_ws/devel
 
 Name: sdv_joystick
 Description: Description of sdv_joystick
